@@ -1,0 +1,1416 @@
+{
+  "groups": 3,
+  "words": [
+    {
+      "word": "daddy,dad,father",
+      "translation": "папа",
+      "category": "family"
+    },
+    {
+      "word": "mummy,mum,mother",
+      "translation": "мама",
+      "category": "family"
+    },
+    {
+      "word": "grandpa,grandfather",
+      "translation": "дедушка",
+      "category": "family"
+    },
+    {
+      "word": "grandma,grandmother",
+      "translation": "бабушка",
+      "category": "family"
+    },
+    {
+      "word": "brother",
+      "translation": "брат",
+      "category": "family"
+    },
+    {
+      "word": "sister",
+      "translation": "сестра",
+      "category": "family"
+    },
+    {
+      "word": "little",
+      "translation": "младший",
+      "category": "family"
+    },
+    {
+      "word": "big",
+      "translation": "старший",
+      "category": "family"
+    },
+    {
+      "word": "apple",
+      "translation": "яблоко",
+      "category": "food"
+    },
+    {
+      "word": "orange",
+      "translation": "апельсин",
+      "category": "food"
+    },
+    {
+      "word": "milk",
+      "translation": "молоко",
+      "category": "food"
+    },
+    {
+      "word": "soup",
+      "translation": "суп",
+      "category": "food"
+    },
+    {
+      "word": "cheese",
+      "translation": "сыр",
+      "category": "food"
+    },
+    {
+      "word": "fish",
+      "translation": "рыба",
+      "category": "food"
+    },
+    {
+      "word": "banana",
+      "translation": "банан",
+      "category": "food"
+    },
+    {
+      "word": "burger",
+      "translation": "бургер",
+      "category": "food"
+    },
+    {
+      "word": "sandwich",
+      "translation": "бутерброд",
+      "category": "food"
+    },
+    {
+      "word": "chips",
+      "translation": "чипсы",
+      "category": "food"
+    },
+    {
+      "word": "chocolate",
+      "translation": "шоколад",
+      "category": "food"
+    },
+    {
+      "word": "favourite",
+      "translation": "любимый",
+      "category": "food"
+    },
+    {
+      "word": "yummy",
+      "translation": "вкусный",
+      "category": "food"
+    },
+    {
+      "word": "ice cream",
+      "translation": "мороженое",
+      "category": "food"
+    },
+    {
+      "word": "juice",
+      "translation": "сок",
+      "category": "food"
+    },
+    {
+      "word": "pizza",
+      "translation": "пицца",
+      "category": "food"
+    },
+    {
+      "word": "cake",
+      "translation": "торт",
+      "category": "food"
+    },
+    {
+      "word": "biscuit",
+      "translation": "печенье",
+      "category": "food"
+    },
+    {
+      "word": "chicken",
+      "translation": "курица",
+      "category": "food"
+    },
+    {
+      "word": "vegetables",
+      "translation": "овощи",
+      "category": "food"
+    },
+    {
+      "word": "fruit",
+      "translation": "фрукт",
+      "category": "food"
+    },
+    {
+      "word": "water",
+      "translation": "вода",
+      "category": "food"
+    },
+    {
+      "word": "lemonade",
+      "translation": "лимонад",
+      "category": "food"
+    },
+    {
+      "word": "egg",
+      "translation": "яйцо",
+      "category": "food"
+    },
+    {
+      "word": "meat",
+      "translation": "мясо",
+      "category": "food"
+    },
+    {
+      "word": "butter",
+      "translation": "масло",
+      "category": "food"
+    },
+    {
+      "word": "potatoes",
+      "translation": "картофель",
+      "category": "food"
+    },
+    {
+      "word": "orange juice",
+      "translation": "апельсинов. сок",
+      "category": "food"
+    },
+    {
+      "word": "pasta",
+      "translation": "паста (макароны)",
+      "category": "food"
+    },
+    {
+      "word": "carrot",
+      "translation": "морковь",
+      "category": "food"
+    },
+    {
+      "word": "sausages",
+      "translation": "сосиски",
+      "category": "food"
+    },
+    {
+      "word": "rice",
+      "translation": "рис",
+      "category": "food"
+    },
+    {
+      "word": "popcorn",
+      "translation": "попкорн",
+      "category": "food"
+    },
+    {
+      "word": "coke",
+      "translation": "кола",
+      "category": "food"
+    },
+    {
+      "word": "sugar",
+      "translation": "сахар",
+      "category": "food"
+    },
+    {
+      "word": "salt",
+      "translation": "соль",
+      "category": "food"
+    },
+    {
+      "word": "jelly",
+      "translation": "желе",
+      "category": "food"
+    },
+    {
+      "word": "school",
+      "translation": "школа",
+      "category": "school"
+    },
+    {
+      "word": "school bag",
+      "translation": "портфель",
+      "category": "school"
+    },
+    {
+      "word": "pen",
+      "translation": "ручка",
+      "category": "school"
+    },
+    {
+      "word": "pencil",
+      "translation": "карандаш",
+      "category": "school"
+    },
+    {
+      "word": "pencil case",
+      "translation": "пенал",
+      "category": "school"
+    },
+    {
+      "word": "rubber",
+      "translation": "ластик",
+      "category": "school"
+    },
+    {
+      "word": "ruler",
+      "translation": "линейка",
+      "category": "school"
+    },
+    {
+      "word": "English",
+      "translation": "английский язык",
+      "category": "school subjects"
+    },
+    {
+      "word": "Maths",
+      "translation": "математика",
+      "category": "school subjects"
+    },
+    {
+      "word": "Geography",
+      "translation": "география",
+      "category": "school subjects"
+    },
+    {
+      "word": "PE",
+      "translation": "физическое воспитание",
+      "category": "school subjects"
+    },
+    {
+      "word": "History",
+      "translation": "история",
+      "category": "school subjects"
+    },
+    {
+      "word": "Science",
+      "translation": "окружающий мир",
+      "category": "school subjects"
+    },
+    {
+      "word": "Art",
+      "translation": "ИЗО",
+      "category": "school subjects"
+    },
+    {
+      "word": "Music",
+      "translation": "музыка",
+      "category": "school subjects"
+    },
+    {
+      "word": "Russian",
+      "translation": "русский язык",
+      "category": "school subjects"
+    },
+    {
+      "word": "Reading",
+      "translation": "чтение",
+      "category": "school subjects"
+    },
+    {
+      "word": "Computer science",
+      "translation": "информатика",
+      "category": "school subjects"
+    },
+    {
+      "word": "Technology",
+      "translation": "технология",
+      "category": "school subjects"
+    },
+    {
+      "word": "red",
+      "translation": "красный",
+      "category": "colours"
+    },
+    {
+      "word": "yellow",
+      "translation": "желтый",
+      "category": "colours"
+    },
+    {
+      "word": "green",
+      "translation": "зеленый",
+      "category": "colours"
+    },
+    {
+      "word": "blue",
+      "translation": "синий",
+      "category": "colours"
+    },
+    {
+      "word": "white",
+      "translation": "белый",
+      "category": "colours"
+    },
+    {
+      "word": "black",
+      "translation": "черный",
+      "category": "colours"
+    },
+    {
+      "word": "purple",
+      "translation": "фиолетовый",
+      "category": "colours"
+    },
+    {
+      "word": "orange",
+      "translation": "оранжевый",
+      "category": "colours"
+    },
+    {
+      "word": "grey",
+      "translation": "серый",
+      "category": "colours"
+    },
+    {
+      "word": "pink",
+      "translation": "розовый",
+      "category": "colours"
+    },
+    {
+      "word": "brown",
+      "translation": "коричневый",
+      "category": "colours"
+    },
+    {
+      "word": "I",
+      "translation": "Я",
+      "category": "pronouns"
+    },
+    {
+      "word": "we",
+      "translation": "мы",
+      "category": "pronouns"
+    },
+    {
+      "word": "you",
+      "translation": "ты/вы",
+      "category": "pronouns"
+    },
+    {
+      "word": "they",
+      "translation": "они",
+      "category": "pronouns"
+    },
+    {
+      "word": "he",
+      "translation": "он",
+      "category": "pronouns"
+    },
+    {
+      "word": "she",
+      "translation": "она",
+      "category": "pronouns"
+    },
+    {
+      "word": "it",
+      "translation": "он/она/оно",
+      "category": "pronouns"
+    },
+    {
+      "word": "my",
+      "translation": "мой",
+      "category": "pronouns"
+    },
+    {
+      "word": "our",
+      "translation": "наш",
+      "category": "pronouns"
+    },
+    {
+      "word": "your",
+      "translation": "твой/ваш",
+      "category": "pronouns"
+    },
+    {
+      "word": "their",
+      "translation": "их",
+      "category": "pronouns"
+    },
+    {
+      "word": "his",
+      "translation": "его",
+      "category": "pronouns"
+    },
+    {
+      "word": "her",
+      "translation": "её",
+      "category": "pronouns"
+    },
+    {
+      "word": "its",
+      "translation": "его/её",
+      "category": "pronouns"
+    },
+    {
+      "word": "house",
+      "translation": "дом",
+      "category": "my_home"
+    },
+    {
+      "word": "tree house",
+      "translation": "дом на дереве",
+      "category": "my_home"
+    },
+    {
+      "word": "chair",
+      "translation": "стул",
+      "category": "my_home"
+    },
+    {
+      "word": "table",
+      "translation": "стол",
+      "category": "my_home"
+    },
+    {
+      "word": "bed",
+      "translation": "кровать",
+      "category": "my_home"
+    },
+    {
+      "word": "radio",
+      "translation": "радио",
+      "category": "my_home"
+    },
+    {
+      "word": "garden",
+      "translation": "сад",
+      "category": "my_home"
+    },
+    {
+      "word": "kitchen",
+      "translation": "кухня",
+      "category": "my_home"
+    },
+    {
+      "word": "bathroom",
+      "translation": "ванная комната",
+      "category": "my_home"
+    },
+    {
+      "word": "living room",
+      "translation": "гостиная",
+      "category": "my_home"
+    },
+    {
+      "word": "bath",
+      "translation": "ванная",
+      "category": "my_home"
+    },
+    {
+      "word": "door",
+      "translation": "дверь",
+      "category": "my_home"
+    },
+    {
+      "word": "window",
+      "translation": "окно",
+      "category": "my_home"
+    },
+    {
+      "word": "bedroom",
+      "translation": "спальня",
+      "category": "my_home"
+    },
+    {
+      "word": "playroom",
+      "translation": "детская",
+      "category": "my_home"
+    },
+    {
+      "word": "TV",
+      "translation": "телевизор",
+      "category": "my_home"
+    },
+    {
+      "word": "computer",
+      "translation": "компьютер",
+      "category": "my_home"
+    },
+    {
+      "word": "armchair",
+      "translation": "кресло",
+      "category": "my_home"
+    },
+    {
+      "word": "lamp",
+      "translation": "лампа",
+      "category": "my_home"
+    },
+    {
+      "word": "desk",
+      "translation": "парта",
+      "category": "my_home"
+    },
+    {
+      "word": "sofa",
+      "translation": "диван",
+      "category": "my_home"
+    },
+    {
+      "word": "glass",
+      "translation": "стакан",
+      "category": "my_home"
+    },
+    {
+      "word": "dish",
+      "translation": "блюдо",
+      "category": "my_home"
+    },
+    {
+      "word": "birthday",
+      "translation": "день рождения",
+      "category": "my_birthday"
+    },
+    {
+      "word": "candle",
+      "translation": "свеча",
+      "category": "my_birthday"
+    },
+    {
+      "word": "happy",
+      "translation": "счастливый",
+      "category": "my_birthday"
+    },
+    {
+      "word": "sad",
+      "translation": "грустный",
+      "category": "my_birthday"
+    },
+    {
+      "word": "party",
+      "translation": "вечеринка",
+      "category": "my_birthday"
+    },
+    {
+      "word": "party",
+      "translation": "вечеринка",
+      "category": "my_birthday"
+    },
+    {
+      "word": "one",
+      "translation": "один",
+      "category": "numbers"
+    },
+    {
+      "word": "two",
+      "translation": "два",
+      "category": "numbers"
+    },
+    {
+      "word": "three",
+      "translation": "три",
+      "category": "numbers"
+    },
+    {
+      "word": "four",
+      "translation": "четыре",
+      "category": "numbers"
+    },
+    {
+      "word": "five",
+      "translation": "пять",
+      "category": "numbers"
+    },
+    {
+      "word": "six",
+      "translation": "шесть",
+      "category": "numbers"
+    },
+    {
+      "word": "seven",
+      "translation": "семь",
+      "category": "numbers"
+    },
+    {
+      "word": "eight",
+      "translation": "восемь",
+      "category": "numbers"
+    },
+    {
+      "word": "nine",
+      "translation": "девять",
+      "category": "numbers"
+    },
+    {
+      "word": "ten",
+      "translation": "десять",
+      "category": "numbers"
+    },
+    {
+      "word": "eleven",
+      "translation": "одиннадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "twelve",
+      "translation": "двенадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "thirteen",
+      "translation": "тринадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "fourteen",
+      "translation": "четырнадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "fifteen",
+      "translation": "пятнадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "sixteen",
+      "translation": "шестнадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "seventeen",
+      "translation": "семнадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "eighteen",
+      "translation": "восемнадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "nineteen",
+      "translation": "девятнадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "twenty",
+      "translation": "двадцать",
+      "category": "numbers"
+    },
+    {
+      "word": "thirty",
+      "translation": "тридцать",
+      "category": "numbers"
+    },
+    {
+      "word": "forty",
+      "translation": "сорок",
+      "category": "numbers"
+    },
+    {
+      "word": "fifty",
+      "translation": "пятьдесят",
+      "category": "numbers"
+    },
+    {
+      "word": "sixty",
+      "translation": "шестьдесят",
+      "category": "numbers"
+    },
+    {
+      "word": "seventy",
+      "translation": "семьдесят",
+      "category": "numbers"
+    },
+    {
+      "word": "eighty",
+      "translation": "восемьдесят",
+      "category": "numbers"
+    },
+    {
+      "word": "ninety",
+      "translation": "девяносто",
+      "category": "numbers"
+    },
+    {
+      "word": "one hundred",
+      "translation": "сто",
+      "category": "numbers"
+    },
+    {
+      "word": "two hundred",
+      "translation": "двести",
+      "category": "numbers"
+    },
+    {
+      "word": "thousand",
+      "translation": "тысяча",
+      "category": "numbers"
+    },
+    {
+      "word": "pet",
+      "translation": "домашнее животное",
+      "category": "animals"
+    },
+    {
+      "word": "fish",
+      "translation": "рыба",
+      "category": "animals"
+    },
+    {
+      "word": "bird",
+      "translation": "птица",
+      "category": "animals"
+    },
+    {
+      "word": "horse",
+      "translation": "лошадь",
+      "category": "animals"
+    },
+    {
+      "word": "frog",
+      "translation": "лягушка",
+      "category": "animals"
+    },
+    {
+      "word": "chimp",
+      "translation": "шимпанзе",
+      "category": "animals"
+    },
+    {
+      "word": "elephant",
+      "translation": "слон",
+      "category": "animals"
+    },
+    {
+      "word": "kangaroo",
+      "translation": "кенгуру",
+      "category": "animals"
+    },
+    {
+      "word": "sheep",
+      "translation": "овца",
+      "category": "animals"
+    },
+    {
+      "word": "cat",
+      "translation": "кошка",
+      "category": "animals"
+    },
+    {
+      "word": "dog",
+      "translation": "собака",
+      "category": "animals"
+    },
+    {
+      "word": "mouse",
+      "translation": "мышь",
+      "category": "animals"
+    },
+    {
+      "word": "dolphin",
+      "translation": "дельфин",
+      "category": "animals"
+    },
+    {
+      "word": "rabbit",
+      "translation": "кролик",
+      "category": "animals"
+    },
+    {
+      "word": "spider",
+      "translation": "паук",
+      "category": "animals"
+    },
+    {
+      "word": "seahorse",
+      "translation": "морской конек",
+      "category": "animals"
+    },
+    {
+      "word": "tortoise",
+      "translation": "черепаха",
+      "category": "animals"
+    },
+    {
+      "word": "parrot",
+      "translation": "попугай",
+      "category": "animals"
+    },
+    {
+      "word": "snake",
+      "translation": "змея",
+      "category": "animals"
+    },
+    {
+      "word": "crocodile",
+      "translation": "крокодил",
+      "category": "animals"
+    },
+    {
+      "word": "swim",
+      "translation": "плавать",
+      "category": "verb"
+    },
+    {
+      "word": "dance",
+      "translation": "танцевать",
+      "category": "verb"
+    },
+    {
+      "word": "sing",
+      "translation": "петь",
+      "category": "verb"
+    },
+    {
+      "word": "fly",
+      "translation": "летать",
+      "category": "verb"
+    },
+    {
+      "word": "run",
+      "translation": "бегать",
+      "category": "verb"
+    },
+    {
+      "word": "jump",
+      "translation": "прыгать",
+      "category": "verb"
+    },
+    {
+      "word": "swing",
+      "translation": "качаться (качели)",
+      "category": "verb"
+    },
+    {
+      "word": "crawl",
+      "translation": "ползать",
+      "category": "verb"
+    },
+    {
+      "word": "walk",
+      "translation": "ходить",
+      "category": "verb"
+    },
+    {
+      "word": "talk",
+      "translation": "болтать",
+      "category": "verb"
+    },
+    {
+      "word": "play a game",
+      "translation": "играть",
+      "category": "verb"
+    },
+    {
+      "word": "drive a car",
+      "translation": "водить машину",
+      "category": "verb"
+    },
+    {
+      "word": "watch TV",
+      "translation": "смотреть телевизор",
+      "category": "verb"
+    },
+    {
+      "word": "paint",
+      "translation": "рисовать",
+      "category": "verb"
+    },
+    {
+      "word": "play soccer",
+      "translation": "играть в футбол",
+      "category": "verb"
+    },
+    {
+      "word": "play basketball",
+      "translation": "играть в баскетбол",
+      "category": "verb"
+    },
+    {
+      "word": "eat",
+      "translation": "кушать",
+      "category": "verb"
+    },
+    {
+      "word": "sleep",
+      "translation": "спать",
+      "category": "verb"
+    },
+    {
+      "word": "in",
+      "translation": "в",
+      "category": "preposition"
+    },
+    {
+      "word": "on",
+      "translation": "на",
+      "category": "preposition"
+    },
+    {
+      "word": "under",
+      "translation": "под",
+      "category": "preposition"
+    },
+    {
+      "word": "between",
+      "translation": "между",
+      "category": "preposition"
+    },
+    {
+      "word": "behind",
+      "translation": "позади",
+      "category": "preposition"
+    },
+    {
+      "word": "in front of",
+      "translation": "впереди",
+      "category": "preposition"
+    },
+    {
+      "word": "next to",
+      "translation": "рядом с",
+      "category": "preposition"
+    },
+    {
+      "word": "teddy bear",
+      "translation": "медвежонок",
+      "category": "toys"
+    },
+    {
+      "word": "toy soldier",
+      "translation": "солдатик",
+      "category": "toys"
+    },
+    {
+      "word": "ballerina",
+      "translation": "балерина",
+      "category": "toys"
+    },
+    {
+      "word": "toy box",
+      "translation": "коробка для игрушек",
+      "category": "toys"
+    },
+    {
+      "word": "puppet",
+      "translation": "игрушка на руку",
+      "category": "toys"
+    },
+    {
+      "word": "Jack-in-the-box",
+      "translation": "Джек в коробке",
+      "category": "toys"
+    },
+    {
+      "word": "musical box",
+      "translation": "музыкальная шкатулка",
+      "category": "toys"
+    },
+    {
+      "word": "aeroplane",
+      "translation": "самолет",
+      "category": "toys"
+    },
+    {
+      "word": "ball",
+      "translation": "мяч",
+      "category": "toys"
+    },
+    {
+      "word": "doll",
+      "translation": "кукла",
+      "category": "toys"
+    },
+    {
+      "word": "rocking horse",
+      "translation": "лошадка качалка",
+      "category": "toys"
+    },
+    {
+      "word": "train",
+      "translation": "поезд",
+      "category": "toys"
+    },
+    {
+      "word": "tea set",
+      "translation": "чайный сервиз",
+      "category": "toys"
+    },
+    {
+      "word": "this",
+      "translation": "этот/эта/это (рядом)",
+      "category": "pronouns"
+    },
+    {
+      "word": "that",
+      "translation": "тот/та/то (вдали)",
+      "category": "pronouns"
+    },
+    {
+      "word": "these",
+      "translation": "эти (рядом)",
+      "category": "pronouns"
+    },
+    {
+      "word": "those",
+      "translation": "те (вдали)",
+      "category": "pronouns"
+    },
+    {
+      "word": "head",
+      "translation": "голова",
+      "category": "body"
+    },
+    {
+      "word": "dark hair",
+      "translation": "темные волосы",
+      "category": "body"
+    },
+    {
+      "word": "fair hair",
+      "translation": "светлые волосы",
+      "category": "body"
+    },
+    {
+      "word": "ears",
+      "translation": "уши",
+      "category": "body"
+    },
+    {
+      "word": "eyes",
+      "translation": "глаза",
+      "category": "body"
+    },
+    {
+      "word": "nose",
+      "translation": "нос",
+      "category": "body"
+    },
+    {
+      "word": "mouth",
+      "translation": "рот",
+      "category": "body"
+    },
+    {
+      "word": "body",
+      "translation": "тело",
+      "category": "body"
+    },
+    {
+      "word": "shoulders",
+      "translation": "плечи",
+      "category": "body"
+    },
+    {
+      "word": "hand",
+      "translation": "рука",
+      "category": "body"
+    },
+    {
+      "word": "leg",
+      "translation": "нога",
+      "category": "body"
+    },
+    {
+      "word": "knee",
+      "translation": "колено",
+      "category": "body"
+    },
+    {
+      "word": "foot",
+      "translation": "нога (ступня)",
+      "category": "body"
+    },
+    {
+      "word": "toes",
+      "translation": "пальцы на ногах",
+      "category": "body"
+    },
+    {
+      "word": "tail",
+      "translation": "хвост",
+      "category": "body"
+    },
+    {
+      "word": "tooth",
+      "translation": "зуб",
+      "category": "body"
+    },
+    {
+      "word": "small",
+      "translation": "маленький",
+      "category": "body"
+    },
+    {
+      "word": "big",
+      "translation": "большой",
+      "category": "body"
+    },
+    {
+      "word": "thin",
+      "translation": "худой",
+      "category": "body"
+    },
+    {
+      "word": "fat",
+      "translation": "толстый",
+      "category": "body"
+    },
+    {
+      "word": "short",
+      "translation": "короткий",
+      "category": "body"
+    },
+    {
+      "word": "long",
+      "translation": "длинный",
+      "category": "body"
+    },
+    {
+      "word": "sheep",
+      "translation": "овца (овцы)",
+      "category": "multi"
+    },
+    {
+      "word": "fish",
+      "translation": "рыба (рыбы)",
+      "category": "multi"
+    },
+    {
+      "word": "man",
+      "translation": "мужчина",
+      "category": "multi"
+    },
+    {
+      "word": "men",
+      "translation": "мужчины",
+      "category": "multi"
+    },
+    {
+      "word": "woman",
+      "translation": "женщина",
+      "category": "multi"
+    },
+    {
+      "word": "women",
+      "translation": "женщины",
+      "category": "multi"
+    },
+    {
+      "word": "child",
+      "translation": "ребенок",
+      "category": "multi"
+    },
+    {
+      "word": "children",
+      "translation": "дети",
+      "category": "multi"
+    },
+    {
+      "word": "mice",
+      "translation": "мыши",
+      "category": "multi"
+    },
+    {
+      "word": "feet",
+      "translation": "ноги (ступни)",
+      "category": "multi"
+    },
+    {
+      "word": "teeth",
+      "translation": "зубы",
+      "category": "multi"
+    },
+    {
+      "word": "It's hot",
+      "translation": "жарко",
+      "category": "weather"
+    },
+    {
+      "word": "It's sunny",
+      "translation": "солнечно",
+      "category": "weather"
+    },
+    {
+      "word": "It's raining",
+      "translation": "дождливо",
+      "category": "weather"
+    },
+    {
+      "word": "It's cloudy",
+      "translation": "облачно",
+      "category": "weather"
+    },
+    {
+      "word": "It's windy",
+      "translation": "ветрено",
+      "category": "weather"
+    },
+    {
+      "word": "It's cold",
+      "translation": "холодно",
+      "category": "weather"
+    },
+    {
+      "word": "It's snowy",
+      "translation": "снежно (идет снег)",
+      "category": "weather"
+    },
+    {
+      "word": "spring",
+      "translation": "весна",
+      "category": "seasons"
+    },
+    {
+      "word": "summer",
+      "translation": "лето",
+      "category": "seasons"
+    },
+    {
+      "word": "autumn",
+      "translation": "осень",
+      "category": "seasons"
+    },
+    {
+      "word": "winter",
+      "translation": "зима",
+      "category": "seasons"
+    },
+    {
+      "word": "wear",
+      "translation": "носить (одежду)",
+      "category": "clothes"
+    },
+    {
+      "word": "take off",
+      "translation": "снимать",
+      "category": "clothes"
+    },
+    {
+      "word": "put on",
+      "translation": "надевать",
+      "category": "clothes"
+    },
+    {
+      "word": "jacket",
+      "translation": "куртка",
+      "category": "clothes"
+    },
+    {
+      "word": "coat",
+      "translation": "пальто",
+      "category": "clothes"
+    },
+    {
+      "word": "shorts",
+      "translation": "шорты",
+      "category": "clothes"
+    },
+    {
+      "word": "hat",
+      "translation": "шляпа",
+      "category": "clothes"
+    },
+    {
+      "word": "socks",
+      "translation": "носки",
+      "category": "clothes"
+    },
+    {
+      "word": "T-shirt",
+      "translation": "футболка",
+      "category": "clothes"
+    },
+    {
+      "word": "jeans",
+      "translation": "джинсы",
+      "category": "clothes"
+    },
+    {
+      "word": "shoes",
+      "translation": "ботинки",
+      "category": "clothes"
+    },
+    {
+      "word": "skirt",
+      "translation": "юбка",
+      "category": "clothes"
+    },
+    {
+      "word": "dress",
+      "translation": "платье",
+      "category": "clothes"
+    },
+    {
+      "word": "day",
+      "translation": "день",
+      "category": "day_of_week"
+    },
+    {
+      "word": "week",
+      "translation": "неделя",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Monday",
+      "translation": "понедельник",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Tuesday",
+      "translation": "вторник",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Wednesday",
+      "translation": "среда",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Thursday",
+      "translation": "четверг",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Friday",
+      "translation": "пятница",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Saturday",
+      "translation": "суббота",
+      "category": "day_of_week"
+    },
+    {
+      "word": "Sunday",
+      "translation": "воскресенье",
+      "category": "day_of_week"
+    },
+    {
+      "word": "on Mondays",
+      "translation": "по понедельникам",
+      "category": "day_of_week"
+    },
+    {
+      "word": "in the morning",
+      "translation": "утром",
+      "category": "day_of_week"
+    },
+    {
+      "word": "in the afternoon",
+      "translation": "днем (после полудня)",
+      "category": "day_of_week"
+    },
+    {
+      "word": "in the evening",
+      "translation": "вечером",
+      "category": "day_of_week"
+    },
+    {
+      "word": "at night",
+      "translation": "ночью",
+      "category": "day_of_week"
+    },
+    {
+      "word": "at 7 o'clock",
+      "translation": "в 7 часов",
+      "category": "day_of_week"
+    }
+
+  ]
+}
