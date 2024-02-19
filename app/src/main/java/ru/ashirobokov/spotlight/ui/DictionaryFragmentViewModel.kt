@@ -12,6 +12,7 @@ import ru.ashirobokov.spotlight.game.MAX_NO_OF_WORDS
 import ru.ashirobokov.spotlight.game.SCORE_INCREASE
 import ru.ashirobokov.spotlight.model.Dictionary
 import ru.ashirobokov.spotlight.model.Word
+import kotlin.math.roundToInt
 
 class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(application) {
     private val TAG: String? = DictionaryFragmentViewModel::class.simpleName
@@ -38,6 +39,10 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
     val score: LiveData<Int>
         get() = _score
 
+    private val _attempts = MutableLiveData<Int>(0)
+    val attempts: LiveData<Int>
+        get() = _attempts
+
     private fun getNextWord() {
         currentWord = words.random()
         if (wordsList.contains(currentWord)) {
@@ -45,6 +50,7 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
         } else {
             _currentRussianWord.value = currentWord.translation
             _currentWordCount.value = (_currentWordCount.value)?.inc()
+            _attempts.value = 0
             wordsList.add(currentWord)
         }
     }
@@ -64,6 +70,45 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
 
     private fun increaseScore() {
         _score.value = _score.value?.plus(SCORE_INCREASE)
+        _attempts.value = (_attempts.value)?.inc()
+    }
+
+    private fun recalcScore(wordCheck: Boolean) {
+        var k: Double = 1.00
+
+        Log.d(TAG, "[recalcScore] score=${_score.value}, atempts=${_attempts.value} ")
+
+        if (wordCheck) {
+            if (_attempts.value!! > 0) {
+                k = k - ((_attempts.value!!) * 0.2)
+            }
+            _score.value = _score.value!! + (SCORE_INCREASE * k).roundToInt()
+            Log.d(TAG, "[recalcScore] recalc=${_score.value}")
+        } else {
+            _attempts.value = (_attempts.value!!).inc()
+        }
+
+/*
+        if (wordCheck) {
+//            _currentWordCount.value = (_currentWordCount.value)?.inc()
+            recalc =
+                (((_score.value!!.toDouble() + SCORE_INCREASE) / attempts.value!!) * _currentWordCount.value!!).roundToInt()
+            Log.d(
+                TAG,
+                "[recalcScore] wordCheck=TRUE, translated=${_currentWordCount.value}, recalc = $recalc"
+            )
+        } else {
+            recalc =
+                ((_score.value!!.toDouble() / attempts.value!!) * _currentWordCount.value!!).roundToInt()
+            Log.d(
+                TAG,
+                "[recalcScore] wordCheck=FALSE, translated=${_currentWordCount.value}, recalc = $recalc"
+            )
+        }
+        _score.value = recalc
+
+*/
+
     }
 
     fun nextWord(): Boolean {
@@ -78,28 +123,36 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
         var wordCheck: Boolean = false
 
         if (currentWord.word.contains(",")) {
-                val words: List<String> = currentWord.word.split(",").map { it.trim() }
-                Log.d(TAG, "Количество слов в списке = ${words.size}")
-                words.forEach({
-                    if (englishWord.trim().lowercase().equals(it)) {
-                        wordCheck = true
-                    }
+            val words: List<String> = currentWord.word.split(",").map { it.trim() }
+            Log.d(TAG, "Количество слов в списке = ${words.size}")
+            words.forEach {
+                if (englishWord.trim().lowercase().equals(it)) {
+                    wordCheck = true
                 }
-            )
+            }
         } else {
             if (englishWord.trim().lowercase().equals(currentWord.word.lowercase())) {
                 wordCheck = true
             }
         }
-        if (wordCheck) {
-            increaseScore()
-        }
+
+        /*
+                if (wordCheck) {
+                    increaseScore()
+                } else {
+                    _attempts.value = (_attempts.value)?.inc()
+                }
+        */
+
+        recalcScore(wordCheck)
+
         return wordCheck
     }
 
     fun reinitializeData() {
         _score.value = 0
         _currentWordCount.value = 0
+        _attempts.value = 0
         wordsList.clear()
         getNextWord()
     }

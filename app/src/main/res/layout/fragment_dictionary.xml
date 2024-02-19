@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_marginBottom="@dimen/default_margin"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
             android:text="@{dictionaryViewModel.currentRussianWord}"
             app:layout_constraintBottom_toTopOf="@+id/textView_instructions"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,6 +79,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="3 из 10 слов" />
+
+        <TextView
+            android:id="@+id/attemps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="@{@string/translate_attempts(dictionaryViewModel.attempts)}"
+            app:layout_constraintEnd_toStartOf="@+id/score"
+            app:layout_constraintStart_toEndOf="@+id/word_count"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Попыток: 15" />
 
         <TextView
             android:id="@+id/score"

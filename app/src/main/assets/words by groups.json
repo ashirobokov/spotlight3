@@ -557,8 +557,23 @@
       "category": "my_home"
     },
     {
-      "word": "dish",
-      "translation": "блюдо",
+      "word": "fridge",
+      "translation": "холодильник",
+      "category": "my_home"
+    },
+    {
+      "word": "cooker",
+      "translation": "кухонная плита",
+      "category": "my_home"
+    },
+    {
+      "word": "mirror",
+      "translation": "зеркало",
+      "category": "my_home"
+    },
+    {
+      "word": "cupboard",
+      "translation": "буфет",
       "category": "my_home"
     },
     {
@@ -1410,7 +1425,71 @@
       "word": "at 7 o'clock",
       "translation": "в 7 часов",
       "category": "day_of_week"
+    },
+    {
+      "word": "roof",
+      "translation": "крыша",
+      "category": "cottage"
+    },
+    {
+      "word": "chimney",
+      "translation": "дымоход",
+      "category": "cottage"
+    },
+    {
+      "word": "window",
+      "translation": "окно",
+      "category": "cottage"
+    },
+    {
+      "word": "wall",
+      "translation": "стена",
+      "category": "cottage"
+    },
+    {
+      "word": "column",
+      "translation": "колонка",
+      "category": "cottage"
+    },
+    {
+      "word": "door",
+      "translation": "дверь",
+      "category": "cottage"
+    },
+    {
+      "word": "dog house",
+      "translation": "собачья будка",
+      "category": "cottage"
+    },
+    {
+      "word": "fence",
+      "translation": "забор",
+      "category": "cottage"
+    },
+    {
+      "word": "yard",
+      "translation": "двор",
+      "category": "cottage"
+    },
+    {
+      "word": "basement",
+      "translation": "подвал",
+      "category": "cottage"
+    },
+    {
+      "word": "garage",
+      "translation": "гараж",
+      "category": "cottage"
+    },
+    {
+      "word": "stairs",
+      "translation": "лестница",
+      "category": "cottage"
+    },
+    {
+      "word": "attic",
+      "translation": "чердак",
+      "category": "cottage"
     }
-
   ]
 }
