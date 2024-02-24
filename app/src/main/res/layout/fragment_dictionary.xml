@@ -73,28 +73,32 @@
             android:id="@+id/word_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_green"
             android:text="@{@string/word_count(dictionaryViewModel.currentWordCount,maxNoOfWords)}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             app:layout_constraintBottom_toTopOf="@+id/textView_russian_word"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="3 из 10 слов" />
+            tools:text="3 из 10" />
 
         <TextView
             android:id="@+id/attemps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@{dictionaryViewModel.attempts > 0 ? @drawable/rounded_corner_red : @drawable/rounded_corner_green}"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:text="@{@string/translate_attempts(dictionaryViewModel.attempts)}"
             app:layout_constraintEnd_toStartOf="@+id/score"
             app:layout_constraintStart_toEndOf="@+id/word_count"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Попыток: 15" />
+            tools:text="Ошибок: 5"
+            tools:background="@drawable/rounded_corner_red"/>
 
         <TextView
             android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_green"
             android:text="@{@string/score(dictionaryViewModel.score)}"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"

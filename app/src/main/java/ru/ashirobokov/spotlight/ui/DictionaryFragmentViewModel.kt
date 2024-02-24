@@ -2,9 +2,11 @@ package ru.ashirobokov.spotlight.ui
 
 import android.app.Application
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.google.android.material.snackbar.Snackbar
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -16,6 +18,8 @@ import kotlin.math.roundToInt
 
 class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(application) {
     private val TAG: String? = DictionaryFragmentViewModel::class.simpleName
+    private val appContext = getApplication<Application>().applicationContext
+
     private val fileInString: String
         get() {
             return getApplication<Application>().applicationContext.assets.open("words by groups.json")
@@ -85,7 +89,12 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
             _score.value = _score.value!! + (SCORE_INCREASE * k).roundToInt()
             Log.d(TAG, "[recalcScore] recalc=${_score.value}")
         } else {
-            _attempts.value = (_attempts.value!!).inc()
+            if (_attempts.value!! > 4) {
+                Toast.makeText(appContext,"Количество попыток исчерпано," +
+                        " Нажмите \"Пропустить\"", Toast.LENGTH_LONG).show()
+            } else {
+                _attempts.value = (_attempts.value!!).inc()
+            }
         }
 
 /*
