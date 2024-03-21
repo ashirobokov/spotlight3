@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.android.material.snackbar.Snackbar
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -16,8 +15,8 @@ import ru.ashirobokov.spotlight.model.Dictionary
 import ru.ashirobokov.spotlight.model.Word
 import kotlin.math.roundToInt
 
-class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(application) {
-    private val TAG: String? = DictionaryFragmentViewModel::class.simpleName
+class DictionaryViewModel(application: Application) : AndroidViewModel(application) {
+    private val TAG: String? = DictionaryViewModel::class.simpleName
     private val appContext = getApplication<Application>().applicationContext
 
     private val fileInString: String
@@ -29,7 +28,10 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
     private lateinit var words: List<Word>
 
     private lateinit var currentWord: Word
+
     private var wordsList: MutableList<Word> = mutableListOf()
+
+    private var categoryFilterList: MutableList<String> = mutableListOf()
 
     private val _currentRussianWord = MutableLiveData<String>()
     val currentRussianWord: LiveData<String>
@@ -56,6 +58,22 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
             _currentWordCount.value = (_currentWordCount.value)?.inc()
             _attempts.value = 0
             wordsList.add(currentWord)
+        }
+    }
+
+    fun completeFilter(element: String) {
+        categoryFilterList.add(element)
+        Log.d(TAG, "Filter = " + categoryFilterList.toString())
+    }
+
+    fun applyFilter() {
+        if (categoryFilterList.isNotEmpty()) {
+//            categoryFilterList.let {
+            this.words = dictionary.words.filter { categoryFilterList.contains(it.category) }
+            Log.d(TAG, "Applying filter")
+        } else {
+            this.words = dictionary.words
+            Log.d(TAG, "Using whole dictionary")
         }
     }
 
@@ -159,6 +177,7 @@ class DictionaryFragmentViewModel(application: Application) : AndroidViewModel(a
     }
 
     fun reinitializeData() {
+        applyFilter()
         _score.value = 0
         _currentWordCount.value = 0
         _attempts.value = 0

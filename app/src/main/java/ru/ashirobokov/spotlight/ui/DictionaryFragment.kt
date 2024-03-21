@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.activityViewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import ru.ashirobokov.spotlight.R
 import ru.ashirobokov.spotlight.databinding.FragmentDictionaryBinding
@@ -14,7 +14,7 @@ import ru.ashirobokov.spotlight.game.MAX_NO_OF_WORDS
 
 class DictionaryFragment : Fragment() {
     private val TAG: String? = DictionaryFragment::class.simpleName
-    private val viewModel: DictionaryFragmentViewModel by viewModels()
+    private val viewModel: DictionaryViewModel by activityViewModels()
 
     private var _binding: FragmentDictionaryBinding? = null
     private val binding get() = _binding!!

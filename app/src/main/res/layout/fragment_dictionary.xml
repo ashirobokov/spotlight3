@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.DictionaryFragment">
 
     <data>
         <variable
+            name="dictionaryFragment"
+            type="ru.ashirobokov.spotlight.ui.DictionaryFragment" />
+        <variable
             name="dictionaryViewModel"
-            type="ru.ashirobokov.spotlight.ui.DictionaryFragmentViewModel" />
+            type="ru.ashirobokov.spotlight.ui.DictionaryViewModel" />
         <variable
             name="maxNoOfWords"
             type="int" />
@@ -19,8 +23,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/default_padding"
-        tools:context=".ui.DictionaryFragment">
+        android:padding="@dimen/default_padding">
 
         <Button
             android:id="@+id/skip"

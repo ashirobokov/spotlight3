@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.SettingsFragment">
+
+    <data>
+        <variable
+            name="settingsFragment"
+            type="ru.ashirobokov.spotlight.ui.SettingsFragment" />
+        <variable
+            name="dictionaryViewModel"
+            type="ru.ashirobokov.spotlight.ui.DictionaryViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="32dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/settings_title"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/check_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/all_groups"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_settings"
+                    tools:checked="true" />
+
+                <CheckBox
+                    android:id="@+id/check_season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/season_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/season_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_all"
+                    app:layout_constraintTop_toBottomOf="@+id/check_all" />
+
+                <CheckBox
+                    android:id="@+id/check_verb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/verb_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/verb_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_season"
+                    app:layout_constraintTop_toBottomOf="@+id/check_season" />
+
+                <CheckBox
+                    android:id="@+id/check_cottage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/cottage_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/cottage_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_verb"
+                    app:layout_constraintTop_toBottomOf="@+id/check_verb" />
+
+                <CheckBox
+                    android:id="@+id/check_day_of_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/day_of_week_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_cottage"
+                    app:layout_constraintTop_toBottomOf="@+id/check_cottage" />
+
+                <CheckBox
+                    android:id="@+id/check_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/birthday_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/birthday_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_day_of_week"
+                    app:layout_constraintTop_toBottomOf="@+id/check_day_of_week" />
+
+                <CheckBox
+                    android:id="@+id/check_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/home_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/home_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_birthday"
+                    app:layout_constraintTop_toBottomOf="@+id/check_birthday" />
+
+                <CheckBox
+                    android:id="@+id/check_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/food_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/food_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_home"
+                    app:layout_constraintTop_toBottomOf="@+id/check_home" />
+
+                <CheckBox
+                    android:id="@+id/check_animal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/animal_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/animal_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_food"
+                    app:layout_constraintTop_toBottomOf="@+id/check_food" />
+
+                <CheckBox
+                    android:id="@+id/check_toy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/toy_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/toy_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_animal"
+                    app:layout_constraintTop_toBottomOf="@+id/check_animal" />
+
+                <CheckBox
+                    android:id="@+id/check_pronoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/pronoun_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/pronoun_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_toy"
+                    app:layout_constraintTop_toBottomOf="@+id/check_toy" />
+
+                <CheckBox
+                    android:id="@+id/check_cloth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/cloth_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/cloth_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_pronoun"
+                    app:layout_constraintTop_toBottomOf="@+id/check_pronoun" />
+
+                <CheckBox
+                    android:id="@+id/check_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/weather_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/weather_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_cloth"
+                    app:layout_constraintTop_toBottomOf="@+id/check_cloth" />
+
+                <CheckBox
+                    android:id="@+id/check_preposition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/preposition_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/preposition_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_weather"
+                    app:layout_constraintTop_toBottomOf="@+id/check_weather" />
+
+                <CheckBox
+                    android:id="@+id/check_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/family_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/family_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_preposition"
+                    app:layout_constraintTop_toBottomOf="@+id/check_preposition" />
+
+                <CheckBox
+                    android:id="@+id/check_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/color_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/color_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_family"
+                    app:layout_constraintTop_toBottomOf="@+id/check_family" />
+
+                <CheckBox
+                    android:id="@+id/check_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/body_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/body_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_color"
+                    app:layout_constraintTop_toBottomOf="@+id/check_color" />
+
+                <CheckBox
+                    android:id="@+id/check_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/number_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/number_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_body"
+                    app:layout_constraintTop_toBottomOf="@+id/check_body" />
+
+                <CheckBox
+                    android:id="@+id/check_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/school_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/school_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_number"
+                    app:layout_constraintTop_toBottomOf="@+id/check_number" />
+
+                <CheckBox
+                    android:id="@+id/check_school_subj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/school_subj_group"
+                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/school_subj_category)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_school"
+                    app:layout_constraintTop_toBottomOf="@+id/check_school" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_check_mark"
+            android:contentDescription="@string/fab_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
