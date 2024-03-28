@@ -379,72 +379,72 @@
     {
       "word": "I",
       "translation": "Я",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "we",
       "translation": "мы",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "you",
       "translation": "ты/вы",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "they",
       "translation": "они",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "he",
       "translation": "он",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "she",
       "translation": "она",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "it",
       "translation": "он/она/оно",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "my",
       "translation": "мой",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "our",
       "translation": "наш",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "your",
       "translation": "твой/ваш",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "their",
       "translation": "их",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "his",
       "translation": "его",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "her",
       "translation": "её",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "its",
       "translation": "его/её/свой",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "house",
@@ -579,32 +579,32 @@
     {
       "word": "birthday",
       "translation": "день рождения",
-      "category": "my_birthday"
+      "category": "family"
     },
     {
       "word": "candle",
       "translation": "свеча",
-      "category": "my_birthday"
+      "category": "family"
     },
     {
       "word": "happy",
       "translation": "счастливый",
-      "category": "my_birthday"
+      "category": "family"
     },
     {
       "word": "sad",
       "translation": "грустный",
-      "category": "my_birthday"
+      "category": "family"
     },
     {
       "word": "party",
       "translation": "вечеринка",
-      "category": "my_birthday"
+      "category": "family"
     },
     {
       "word": "party",
       "translation": "вечеринка",
-      "category": "my_birthday"
+      "category": "family"
     },
     {
       "word": "one",
@@ -949,37 +949,37 @@
     {
       "word": "in",
       "translation": "в",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "on",
       "translation": "на",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "under",
       "translation": "под",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "between",
       "translation": "между",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "behind",
       "translation": "позади",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "in front of",
       "translation": "впереди",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "next to",
       "translation": "рядом с",
-      "category": "preposition"
+      "category": "speech_parts"
     },
     {
       "word": "teddy bear",
@@ -1049,22 +1049,22 @@
     {
       "word": "this",
       "translation": "этот/эта/это (рядом)",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "that",
       "translation": "тот/та/то (вдали)",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "these",
       "translation": "эти (рядом)",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "those",
       "translation": "те (вдали)",
-      "category": "pronouns"
+      "category": "speech_parts"
     },
     {
       "word": "head",
@@ -1179,112 +1179,132 @@
     {
       "word": "sheep",
       "translation": "овца (овцы)",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "fish",
       "translation": "рыба (рыбы)",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "man",
       "translation": "мужчина",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "men",
       "translation": "мужчины",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "woman",
       "translation": "женщина",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "women",
       "translation": "женщины",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "child",
       "translation": "ребенок",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "children",
       "translation": "дети",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "mice",
       "translation": "мыши",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "feet",
       "translation": "ноги (ступни)",
-      "category": "multi"
+      "category": "single_many"
     },
     {
       "word": "teeth",
       "translation": "зубы",
-      "category": "multi"
+      "category": "single_many"
     },
     {
-      "word": "It's hot",
-      "translation": "жарко",
-      "category": "weather"
+      "word": "cloudy",
+      "translation": "облачная (погода)",
+      "category": "season_weather"
     },
     {
-      "word": "It's sunny",
-      "translation": "солнечно",
-      "category": "weather"
+      "word": "cold",
+      "translation": "холодная (погода)",
+      "category": "season_weather"
     },
     {
-      "word": "It's raining",
-      "translation": "дождливо",
-      "category": "weather"
+      "word": "dry",
+      "translation": "сухая (погода)",
+      "category": "season_weather"
     },
     {
-      "word": "It's cloudy",
-      "translation": "облачно",
-      "category": "weather"
+      "word": "frosty",
+      "translation": "морозная (погода)",
+      "category": "season_weather"
     },
     {
-      "word": "It's windy",
-      "translation": "ветрено",
-      "category": "weather"
+      "word": "hot",
+      "translation": "жаркая (погода)",
+      "category": "season_weather"
     },
     {
-      "word": "It's cold",
-      "translation": "холодно",
-      "category": "weather"
+      "word": "rainy",
+      "translation": "дождливая (погода)",
+      "category": "season_weather"
     },
     {
-      "word": "It's snowy",
-      "translation": "снежно (идет снег)",
-      "category": "weather"
+      "word": "snowy",
+      "translation": "снежная (погода)",
+      "category": "season_weather"
+    },
+    {
+      "word": "sunny",
+      "translation": "солнечная (погода)",
+      "category": "season_weather"
+    },
+    {
+      "word": "warm",
+      "translation": "теплая (погода)",
+      "category": "season_weather"
+    },
+    {
+      "word": "wet",
+      "translation": "сырая (погода)",
+      "category": "season_weather"
+    },
+    {
+      "word": "windy",
+      "translation": "ветреная (погода)",
+      "category": "season_weather"
     },
     {
       "word": "spring",
       "translation": "весна",
-      "category": "seasons"
+      "category": "season_weather"
     },
     {
       "word": "summer",
       "translation": "лето",
-      "category": "seasons"
+      "category": "season_weather"
     },
     {
       "word": "autumn",
       "translation": "осень",
-      "category": "seasons"
+      "category": "season_weather"
     },
     {
       "word": "winter",
       "translation": "зима",
-      "category": "seasons"
+      "category": "season_weather"
     },
     {
       "word": "wear",

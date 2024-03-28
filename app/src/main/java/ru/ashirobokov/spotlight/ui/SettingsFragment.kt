@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -39,6 +40,7 @@ class SettingsFragment : Fragment() {
 
         binding.dictionaryViewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
+        viewModel.clearFilter()
 
         binding.floatingActionButton.setOnClickListener {
             Toast.makeText(context,"НАЧИНАЕМ ИГРУ!", Toast.LENGTH_LONG).show()
@@ -47,9 +49,9 @@ class SettingsFragment : Fragment() {
               */
             viewModel.reinitializeData()
             findNavController().navigate(R.id.action_settingsFragment_to_dictionaryFragment)
-
         }
 
     }
+
 
 }

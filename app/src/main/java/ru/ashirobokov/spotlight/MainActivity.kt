@@ -41,7 +41,13 @@ class MainActivity : AppCompatActivity() {
                 R.id.settings -> {
 //// Управление нажатием на settings icon
                     Toast.makeText(this,"Выбрано НАСТРОЙКИ", Toast.LENGTH_LONG).show()
-                    navController.navigate(R.id.action_dictionaryFragment_to_settingsFragment)
+                    val id = navController.currentDestination?.id
+                    if (id == R.id.dictionaryFragment) {
+                        navController.navigate(R.id.action_dictionaryFragment_to_settingsFragment)
+                    } else {
+                        Toast.makeText(this,"Применить НАСТРОЙКИ можно нажатием на кнопку внизу", Toast.LENGTH_LONG).show()
+                    }
+
 /*
                     settingOpen = if (!settingOpen) {
                         navController.navigate(R.id.action_dictionaryFragment_to_settingsFragment)

@@ -46,20 +46,11 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:text="@string/all_groups"
+                    android:checked="@{dictionaryViewModel.all}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/all_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView_settings"
                     tools:checked="true" />
-
-                <CheckBox
-                    android:id="@+id/check_season"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/season_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/season_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_all"
-                    app:layout_constraintTop_toBottomOf="@+id/check_all" />
 
                 <CheckBox
                     android:id="@+id/check_verb"
@@ -67,9 +58,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/verb_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/verb_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_season"
-                    app:layout_constraintTop_toBottomOf="@+id/check_season" />
+                    android:checked="@{dictionaryViewModel.verb}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/verb_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_all"
+                    app:layout_constraintTop_toBottomOf="@+id/check_all" />
 
                 <CheckBox
                     android:id="@+id/check_cottage"
@@ -77,7 +69,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/cottage_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/cottage_category)}"
+                    android:checked="@{dictionaryViewModel.cottage}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/cottage_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_verb"
                     app:layout_constraintTop_toBottomOf="@+id/check_verb" />
 
@@ -87,19 +80,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/day_of_week_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/day_of_week_category)}"
+                    android:checked="@{dictionaryViewModel.day_of_week}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/day_of_week_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_cottage"
                     app:layout_constraintTop_toBottomOf="@+id/check_cottage" />
-
-                <CheckBox
-                    android:id="@+id/check_birthday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/birthday_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/birthday_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_day_of_week"
-                    app:layout_constraintTop_toBottomOf="@+id/check_day_of_week" />
 
                 <CheckBox
                     android:id="@+id/check_home"
@@ -107,9 +91,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/home_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/home_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_birthday"
-                    app:layout_constraintTop_toBottomOf="@+id/check_birthday" />
+                    android:checked="@{dictionaryViewModel.home}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/home_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_day_of_week"
+                    app:layout_constraintTop_toBottomOf="@+id/check_day_of_week" />
 
                 <CheckBox
                     android:id="@+id/check_food"
@@ -117,7 +102,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/food_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/food_category)}"
+                    android:checked="@{dictionaryViewModel.food}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/food_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_home"
                     app:layout_constraintTop_toBottomOf="@+id/check_home" />
 
@@ -127,7 +113,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/animal_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/animal_category)}"
+                    android:checked="@{dictionaryViewModel.animal}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/animal_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_food"
                     app:layout_constraintTop_toBottomOf="@+id/check_food" />
 
@@ -137,19 +124,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/toy_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/toy_category)}"
+                    android:checked="@{dictionaryViewModel.toy}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/toy_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_animal"
                     app:layout_constraintTop_toBottomOf="@+id/check_animal" />
-
-                <CheckBox
-                    android:id="@+id/check_pronoun"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/pronoun_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/pronoun_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_toy"
-                    app:layout_constraintTop_toBottomOf="@+id/check_toy" />
 
                 <CheckBox
                     android:id="@+id/check_cloth"
@@ -157,29 +135,33 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/cloth_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/cloth_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_pronoun"
-                    app:layout_constraintTop_toBottomOf="@+id/check_pronoun" />
+                    android:checked="@{dictionaryViewModel.cloth}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/cloth_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_toy"
+                    app:layout_constraintTop_toBottomOf="@+id/check_toy" />
 
                 <CheckBox
-                    android:id="@+id/check_weather"
+                    android:id="@+id/check_single_many"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/weather_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/weather_category)}"
+                    android:text="@string/single_many_group"
+                    android:checked="@{dictionaryViewModel.single_many}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/single_many_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_cloth"
                     app:layout_constraintTop_toBottomOf="@+id/check_cloth" />
 
                 <CheckBox
-                    android:id="@+id/check_preposition"
+                    android:id="@+id/check_season_weather"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/preposition_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/preposition_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_weather"
-                    app:layout_constraintTop_toBottomOf="@+id/check_weather" />
+                    android:text="@string/season_weather_group"
+                    android:checked="@{dictionaryViewModel.season_weather}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/season_weather_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_single_many"
+                    app:layout_constraintTop_toBottomOf="@+id/check_single_many" />
+
 
                 <CheckBox
                     android:id="@+id/check_family"
@@ -187,9 +169,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/family_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/family_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_preposition"
-                    app:layout_constraintTop_toBottomOf="@+id/check_preposition" />
+                    android:checked="@{dictionaryViewModel.family}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/family_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_season_weather"
+                    app:layout_constraintTop_toBottomOf="@+id/check_season_weather" />
 
                 <CheckBox
                     android:id="@+id/check_color"
@@ -197,9 +180,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/color_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/color_category)}"
+                    android:checked="@{dictionaryViewModel.color}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/color_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_family"
                     app:layout_constraintTop_toBottomOf="@+id/check_family" />
+
+                <CheckBox
+                    android:id="@+id/check_speech_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/speech_part_group"
+                    android:checked="@{dictionaryViewModel.speech_part}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/speech_part_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_color"
+                    app:layout_constraintTop_toBottomOf="@+id/check_color" />
 
                 <CheckBox
                     android:id="@+id/check_body"
@@ -207,9 +202,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/body_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/body_category)}"
-                    app:layout_constraintStart_toStartOf="@+id/check_color"
-                    app:layout_constraintTop_toBottomOf="@+id/check_color" />
+                    android:checked="@{dictionaryViewModel.body}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/body_category, isChecked)}"
+                    app:layout_constraintStart_toStartOf="@+id/check_speech_part"
+                    app:layout_constraintTop_toBottomOf="@+id/check_speech_part" />
 
                 <CheckBox
                     android:id="@+id/check_number"
@@ -217,7 +213,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/number_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/number_category)}"
+                    android:checked="@{dictionaryViewModel.number}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/number_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_body"
                     app:layout_constraintTop_toBottomOf="@+id/check_body" />
 
@@ -227,7 +224,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/school_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/school_category)}"
+                    android:checked="@{dictionaryViewModel.school}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/school_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_number"
                     app:layout_constraintTop_toBottomOf="@+id/check_number" />
 
@@ -237,7 +235,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/school_subj_group"
-                    android:onClick="@{() -> dictionaryViewModel.completeFilter(@string/school_subj_category)}"
+                    android:checked="@{dictionaryViewModel.school_subj}"
+                    android:onCheckedChanged="@{(category, isChecked) -> dictionaryViewModel.processCategory(@string/school_subj_category, isChecked)}"
                     app:layout_constraintStart_toStartOf="@+id/check_school"
                     app:layout_constraintTop_toBottomOf="@+id/check_school" />
 
